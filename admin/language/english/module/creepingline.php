@@ -15,3 +15,4 @@ $_['entry_status']        = 'Status:';
 // Error
 $_['error_permission']    = 'Warning: You do not have permission to modify module Creeping line!';
 $_['error_code']          = 'Code Required';
+$_['error_url']           = 'URL Required';

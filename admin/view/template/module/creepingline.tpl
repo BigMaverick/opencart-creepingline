@@ -39,7 +39,7 @@
             <div class="col-sm-10">
               <textarea name="creepingline_url_field" cols="40" rows="5" placeholder="<?php echo $entry_url; ?>"><?php echo $creepingline_url_field; ?></textarea>
               <?php if ($error_code) { ?>
-              <div class="text-danger"><?php echo $error_code; ?></div>
+              <div class="text-danger"><?php echo $error_url; ?></div>
               <?php } ?>
             </div>
           </div>

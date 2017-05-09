@@ -3,8 +3,8 @@ class ControllerModuleCreepingline extends Controller {
     public function index() {
         $this->load->language('module/creepingline'); // loads the language file of creepingline
          
-	$this->document->addScript('catalog/view/javascript/jquery/limarquee/js/jquery.limarquee.js');
-	$this->document->addStyle('catalog/view/javascript/jquery/limarquee/css/limarquee.css'); 
+	$this->document->addScript('catalog/view/javascript/jquery/limarquee/js/jquery.liMarquee.js');
+	$this->document->addStyle('catalog/view/javascript/jquery/limarquee/css/liMarquee.css'); 
 
         $data['heading_title'] = $this->language->get('heading_title'); // set the heading_title of the module
          

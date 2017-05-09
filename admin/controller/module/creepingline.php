@@ -124,9 +124,9 @@ class ControllerModuleCreepingline extends Controller {
         if (!$this->request->post['creepingline_text_field']) {
             $this->error['code'] = $this->language->get('error_code');
         }
-        if (!$this->request->post['creepingline_url_field']) {
-            $this->error['code'] = $this->language->get('error_code');
-        }
+        /*if (!$this->request->post['creepingline_url_field']) {
+            $this->error['url'] = $this->language->get('error_url');
+        }*/
         /* End Block*/
  
         // Block returns true if no error is found, else false if any error detected

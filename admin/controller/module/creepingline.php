@@ -36,6 +36,7 @@ class ControllerModuleCreepingline extends Controller {
         $data['text_column_right'] = $this->language->get('text_column_right');
      
         $data['entry_code'] = $this->language->get('entry_code');
+        $data['entry_url'] = $this->language->get('entry_url');
         $data['entry_layout'] = $this->language->get('entry_layout');
         $data['entry_position'] = $this->language->get('entry_position');
         $data['entry_status'] = $this->language->get('entry_status');
@@ -89,6 +90,11 @@ class ControllerModuleCreepingline extends Controller {
         } else {
             $data['creepingline_text_field'] = $this->config->get('creepingline_text_field');
         }   
+        if (isset($this->request->post['creepingline_url_field'])) {
+            $data['creepingline_url_field'] = $this->request->post['creepingline_url_field'];
+        } else {
+            $data['creepingline_url_field'] = $this->config->get('creepingline_url_field');
+        }   
           
         // This block parses the status (enabled / disabled)
         if (isset($this->request->post['creepingline_status'])) {
@@ -116,6 +122,9 @@ class ControllerModuleCreepingline extends Controller {
         // Block to check if the creepingline_text_field is properly set to save into database,
         // otherwise the error is returned
         if (!$this->request->post['creepingline_text_field']) {
+            $this->error['code'] = $this->language->get('error_code');
+        }
+        if (!$this->request->post['creepingline_url_field']) {
             $this->error['code'] = $this->language->get('error_code');
         }
         /* End Block*/

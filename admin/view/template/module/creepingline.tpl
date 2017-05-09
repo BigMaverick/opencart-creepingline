@@ -37,7 +37,7 @@
           <div class="form-group">
             <label class="col-sm-2 control-label" for="textarea-creepingline_url_field"><?php echo $entry_url; ?></label>
             <div class="col-sm-10">
-              <textarea name="creepingline_text_field" cols="40" rows="5" placeholder="<?php echo $entry_url; ?>"><?php echo $creepingline_url_field; ?></textarea>
+              <textarea name="creepingline_url_field" cols="40" rows="5" placeholder="<?php echo $entry_url; ?>"><?php echo $creepingline_url_field; ?></textarea>
               <?php if ($error_code) { ?>
               <div class="text-danger"><?php echo $error_code; ?></div>
               <?php } ?>
